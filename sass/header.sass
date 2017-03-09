@@ -1,6 +1,10 @@
 @import "bourbon"
 @import "vars.sass"
 
+@font-face 
+    font-family: Gotham;
+    src: url("../fonts/GothaProReg.otf") format("opentype");
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -11,3 +15,82 @@ body
 
 .hidden
 	display: none
+
+.top_section 
+	background-color: #000
+	background: url('../img/bg.jpg') center top no-repeat
+	background-size: cover
+	height: 600px
+	.logo 
+		padding-top: 11px
+	header 
+		color: #fff
+		font-family: 'Gotham', sans-serif
+		.nav 
+			list-style-type: none
+			margin-top: 0
+			padding-left: 0
+			padding-top: 17px
+			li 	
+				display: inline-block
+				font-size: 13px
+				text-transform: uppercase
+				padding: 12px 10.5px 12px 12.5px
+				margin-right: 22px
+				&:last-child 
+					margin-right: 0
+		.email 
+			display: inline-block
+			margin-top: 24px
+			margin-right: 58px
+			font-size: 14px
+			position: relative
+			&:before 
+				position: absolute
+				content: ''
+				width: 30px
+				height: 20px
+				background: url('../img/group.svg') no-repeat
+				left: -26px
+				top: 6px
+		.phone 
+			display: inline-block		
+			margin-top: 24px
+			font-size: 14px
+			position: relative
+			&:before 
+				position: absolute
+				content: ''
+				width: 30px
+				height: 20px
+				background: url('../img/shape.svg') no-repeat
+				left: -26px
+				top: 6px
+		.search 
+			display: inline-block
+			width: 30px
+			height: 30px
+			background: url('../img/поиск.svg') no-repeat
+			padding-top: 10px
+			position: relative
+			top: 10px
+			margin-left: 34px
+	.top_logo 
+		font-family: 'Gotham', sans-serif
+		img 
+			margin: auto
+			display: block
+			margin-top: 20px
+		span 
+			text-align: center
+			color: #fff	
+			display: block
+			margin: auto
+			font-size: 11px
+			margin-top: 7px
+			line-height: 20px
+			opacity: 0.8
+
+				
+
+

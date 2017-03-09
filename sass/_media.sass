@@ -4,13 +4,29 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.nav 
+		li 	
+			margin-right: 11px !important
+			font-size: 11px !important	
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
+	.email 
+		margin-right: 21px !important	
+		font-size: 11px !important
+	.phone 
+		font-size: 11px !important
+	.nav 
+		li 	
+			margin-right: 5px !important
+			font-size: 9px !important	
+	.phone 
+		&:before 
+			left: -18px !important
+			top: 5px !important
+	.search 
+		display: none !important			
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -35,7 +51,8 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
-
+	.nav 
+		display: none
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -67,7 +84,6 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
-
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
