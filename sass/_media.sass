@@ -21,12 +21,22 @@
 		li 	
 			margin-right: 5px !important
 			font-size: 9px !important	
+			padding: 12px 4.5px 12px 0.5px !important
 	.phone 
 		&:before 
 			left: -18px !important
 			top: 5px !important
 	.search 
-		display: none !important				
+		margin-left: 14px !important
+
+	.catalog_section_goods 
+		&_item 
+			&_code
+				&:after 
+					width: 25%
+				&:before	
+					width: 25%			
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -53,6 +63,13 @@
 		animation: none !important
 	.nav 
 		display: none
+		position: relative
+		width: 200px
+		margin-top: 140px
+		left: -63%
+		float: left
+		transform: translate(-50%, 0)
+
 		li 
 			display: block !important
 			font-size: 16px !important
@@ -84,11 +101,32 @@
 					color: #c99d60
 					text-align: center
 					display: block 		
+	.catalog_section_goods 
+		&_item 
+			&_code
+				&:after 
+					width: 35%
+				&:before	
+					width: 35%	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.top_logo_title 
 		font-size: 32px !important	
+		line-height: 40px !important
+	.catalog_section_goods 
+		&_item 
+			&_code
+				&:after 
+					width: 27%
+				&:before	
+					width: 27%
+	.nav 
+		display: none
+		position: relative
+		width: 200px
+		margin-top: 140px
+		left: -67% !important								
 
 
 /* Custom, iPhone Retina */
@@ -128,5 +166,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+	.top_section 
+		background-size: cover !important
+	.service_section 
+		background-size: cover !important
+			
 
