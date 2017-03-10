@@ -161,6 +161,7 @@ body textarea:required:valid
 
 .order_section 
 	padding-top: 102px
+	padding-bottom: 120px
 	&_title 
 		text-align: center
 		font-family: 'Gotham', sans-serif
@@ -169,15 +170,61 @@ body textarea:required:valid
 		line-height: 1.21
 		margin: 0
 	&_list 
+		margin-top: 49px
+		position: relative
+		z-index: 1
+		&:after 
+			position: absolute
+			content: ''
+			height: 1px
+			width: 65%
+			left: 50%
+			transform: translate(-50%, 0)	
+			background-color: #d7d7d7
+			top: 20px
+			z-index: 1		
 		&_item 
 			text-align: center
 			&_number 
+				position: relative
 				font-size: 16px
+				width: 37px
+				height: 37px
+				border-radius: 50%
+				margin: auto
+				border: 1px solid #d7d7d7
+				vertical-align: middle
+				line-height: 37px
+				z-index: 5
+				background-color: #FFF
 			img 
+				margin-top: 39px
 
 			&_text
-
+				font-size: 16px
+				line-height: 1.5
+				margin: 0
+				margin-top: 37px
 			&_button
+				color: #135bbb
+				text-decoration: none
+				padding: 13px 40px 11px 40px
+				border: solid 1px rgba(18, 91, 187, 0.4)
+				border-radius: 2px
+				margin: auto
+				text-align: center
+				display: inline-block
+				margin-top: 30px	
+				&:hover 
+					text-decoration: none
+					color: #135bbb
+			&_phone		
+				font-family: 'GothamMed', sans-serif
+				font-size: 16px
+				font-weight: 500
+				line-height: 1.13
+				color: #135bbb
+				margin-top: 19px	
 
 
 
