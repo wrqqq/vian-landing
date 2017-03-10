@@ -26,7 +26,7 @@
 			left: -18px !important
 			top: 5px !important
 	.search 
-		display: none !important			
+		display: none !important				
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -53,15 +53,59 @@
 		animation: none !important
 	.nav 
 		display: none
+		li 
+			display: block !important
+			font-size: 16px !important
+			text-align: center
+	.logo 
+		img 
+			display: block !important
+			margin: auto !important	
+			text-align: center
+	.contacts 
+		margin: auto
+		text-align: center
+		.phone 	
+			font-size: 15px !important
+		.email 
+			font-size: 15px !important		
+	.top_logo_title 
+		font-size: 52px !important		
+	.catalog_section
+		&_goods
+			margin-top: 40px
+			&_item 
+				max-width: 100%
+				width: 249px
+				margin: auto
+				img 
+					
+				span 
+					color: #c99d60
+					text-align: center
+					display: block 		
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.top_logo_title 
+		font-size: 32px !important	
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+	.catalog_section
+		&_goods
+			margin-top: 40px
+			&_item 
+				max-width: 100%
+				margin: auto
+				img 
+					max-width: 100%
+
+				span 
+					color: #c99d60
+					text-align: center
+					display: block 	
 
 
 /*==========  Mobile First Method  ==========*/
@@ -74,13 +118,10 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
 	/**/
-
-
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
-
-
+	.nav 
+		display: block !important
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
