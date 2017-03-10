@@ -1,5 +1,6 @@
 @import "bourbon"
 @import "vars.sass"
+@import "fonts.sass"
 
 //Load Libs SASS
 @import "app/libs/animate/animate.sass"
@@ -115,8 +116,10 @@ body textarea:required:valid
 		display: block
 		max-width: 338px
 		margin-top: 50px
+		transition: 0.4s ease		
 		&:hover 
-			color: #135bbb
+			color: #fff
+			background-color: #135bbb
 			text-decoration: none
 
 .service_section 
@@ -125,7 +128,6 @@ body textarea:required:valid
 	padding-top: 123px
 	background-size: cover
 	&_item 
-		border: 1px solid white
 		max-width: 251px
 		text-align: center
 		color: #fff
@@ -134,6 +136,8 @@ body textarea:required:valid
 		padding-top: 52px
 		margin: auto
 		margin-bottom: 50px
+		background: url('../img/service_border.svg') center top no-repeat
+		background-size: contain
 		img 
 			margin: auto
 			display: block
@@ -215,9 +219,12 @@ body textarea:required:valid
 				text-align: center
 				display: inline-block
 				margin-top: 30px	
+				transition: 0.4s ease
 				&:hover 
 					text-decoration: none
-					color: #135bbb
+					color: #fff
+					background-color: #135bbb
+					text-decoration: none
 			&_phone		
 				font-family: 'GothamMed', sans-serif
 				font-size: 16px
@@ -246,6 +253,56 @@ body textarea:required:valid
 			max-width: 819px
 			margin: auto	
 			margin-top: 20px
+
+.footer 
+	padding-top: 31px
+	padding-bottom: 60px
+	&_copy 
+		line-height: 1.29
+		font-size: 14px
+	&_list 
+		list-style-type: none
+		padding-left: 0
+		margin-top: 28px
+		li 
+			font-size: 13px
+			margin-bottom: 10px
+			line-height: 18px
+			opacity: 0.7
+			a 
+				color: #000
+				&:hover 
+					text-decoration: none
+					color: #000
+	&_phone 
+		font-size: 14px
+		font-family: 'GothamBold'
+		line-height: 1.29
+		margin-top: 28px
+		position: relative
+		&:before 
+			position: absolute
+			content: ''
+			width: 30px
+			height: 20px
+			background: url('../img/group.svg') no-repeat
+			left: -26px
+			top: 6px
+	&_email 
+		font-size: 14px
+		line-height: 1.29
+		margin-top: 18px
+		position: relative
+		&:before 
+			position: absolute
+			content: ''
+			width: 30px
+			height: 20px
+			background: url('../img/shape.svg') no-repeat
+			left: -26px
+			top: 6px			
+
+
 
 
 
