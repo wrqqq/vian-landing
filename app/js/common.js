@@ -7,28 +7,9 @@ $(function() {
 		});
 	};
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+
 var theToggle = document.getElementById('toggle');
 var menu = document.querySelector('nav');
-
-// based on Todd Motto functions
-// http://toddmotto.com/labs/reusable-js/
 
 // hasClass
 function hasClass(elem, className) {
@@ -70,4 +51,15 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }	
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('header').addClass('fixed animated fadeInDown');
+     	$('.logo img').attr('src', 'img/logo_fix.png');
+    } else {
+     	$('.logo img').attr('src', 'img/logo.png');
+        $('header').removeClass('fixed animated fadeInDown');
+
+    }
+});
 });
