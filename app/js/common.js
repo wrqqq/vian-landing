@@ -32,6 +32,7 @@ function removeClass(elem, className) {
     }
 }
 // toggleClass
+
 function toggleClass(elem, className) {
 	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
     if (hasClass(elem, className)) {
@@ -56,10 +57,19 @@ $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 50) {
         $('header').addClass('fixed animated fadeInDown');
      	$('.logo img').attr('src', 'img/logo_fix.png');
+     	$('.description_section_link').show();
     } else {
      	$('.logo img').attr('src', 'img/logo.png');
+     	$('.description_section_link').hide();
         $('header').removeClass('fixed animated fadeInDown');
 
     }
+});
+
+$( ".description_section_link" ).click(function(e) {
+		 e.preventDefault();
+         $('body').stop().animate({
+            scrollTop: $('.top_section').offset().top
+        }, 900);
 });
 });
